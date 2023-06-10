@@ -16,7 +16,9 @@ toastr.options = {
   "hideMethod": "fadeOut"
 }
 
-const socket = new WebSocket('ws://localhost:8080');
+const serverAddress = 'ws://192.210.226.187:8080'
+
+const socket = new WebSocket(serverAddress);
 
 socket.addEventListener('open', () => {
   console.log('WebSocket connection established.');
